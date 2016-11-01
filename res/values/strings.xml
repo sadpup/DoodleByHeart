@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Doodle</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- menu name -->
+    <string name="action_settings">设置</string>
+    <string name="action_save">保存本图</string>
+    
+    
+    <string name="text_welcome">Welcome to Free Painting!</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_save">Save</string>
+    <string name="main_title_name">最爱涂鸦</string>
+    <string name="main_title_01">分类欣赏</string>
+    <string name="main_title_02">精品热吧</string>
+    
+    <!-- 广告 -->
+    <string name="ad_context_title">我爱涂鸦我爱涂鸦</string>
+    <string name="re_men_ba">热门吧(190)</string>
+    
+    
+
+</resources>

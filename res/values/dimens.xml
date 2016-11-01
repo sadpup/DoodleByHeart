@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="titile_bar_height">45dp</dimen>
+    <dimen name="titile_text_size">18sp</dimen>
+    
+    <!-- 广告 -->
+    <dimen name="ad_context_title_size">10sp</dimen>
+    <dimen name="ad_context_title_h_size">5sp</dimen>
+
+</resources>

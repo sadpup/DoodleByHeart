@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.doodle.byheart"
+    android:id="@+id/t_title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titile_bar_height"
+    android:orientation="vertical"
+    android:background="@drawable/bg_title" >
+
+    <com.doodle.byheart.view.RoundTextView
+        android:id="@+id/t_centerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/titile_text_size"
+        android:textStyle="bold"
+        android:text="中间标题"/>
+
+    <com.doodle.byheart.view.CircleImageView
+        android:id="@+id/t_leftImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/camera_default"
+        app:border_width="0dp"
+        app:border_color="@color/black" />
+
+    <Button
+        android:id="@+id/t_rightBtn"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:text="投稿"
+        android:textSize="10sp"
+        android:drawableTop="@drawable/doodle_jump" />
+
+</RelativeLayout>

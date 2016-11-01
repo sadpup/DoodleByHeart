@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.doodle.byheart"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+    
+    <!-- 网络 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 内存卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 定位相关 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    
+
+    <application
+        android:name="com.doodle.byheart.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/doodle_laucher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".GuideActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.doodle.byheart.activity.PaintActivity">
+        </activity>
+        <activity 
+            android:name="com.doodle.byheart.activity.SurfaceViewActivity3">
+        </activity>
+        <activity 
+            android:name="com.doodle.byheart.activity.PersonalCenter">
+        </activity>
+        <activity 
+            android:name="com.doodle.byheart.MainActivity">
+        </activity>
+        
+        <!-- 该服务用于监测程序状态，发送广播   http://liangruijun.blog.51cto.com/3061169/647804-->
+        <service
+            android:name="com.doodle.byheart.base.BaseService"
+            android:enabled="true" >
+            <intent-filter>
+                <!-- 监测程序的app状态 -->
+                <action android:name="com.doodle.byheart.action.GLOBAL_SERVICE" />
+            </intent-filter>
+        </service>
+        <!-- 该服务用于配合上面的服务完成app状态监测-->
+        <receiver android:name="com.doodle.byheart.base.BaseAppLisener" >
+		    <intent-filter>
+                <!-- 监测程序的app状态 -->
+                <action android:name="com.doodle.byheart.action.GLOBAL_SERVICE" />
+                <!-- 检测网络状态 -->
+        		<action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> 
+		    </intent-filter>
+		</receiver>
+    </application>
+
+</manifest>

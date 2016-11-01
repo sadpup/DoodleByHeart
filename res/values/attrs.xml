@@ -1,0 +1,33 @@
+<resources>
+<!-- 
+    <declare-styleable name="PieChart">
+        <attr name="showText" format="boolean" />
+        <attr name="labelPosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable> -->
+    
+	<!-- 圆形自定义View的自定义属性 -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    
+    <!-- 自定义viewpager用到的自定义属性 -->
+    <attr name="item_count" format="integer"></attr>
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="item_count" />
+    </declare-styleable>
+    
+    <!-- gifview 送到的 -->
+     <declare-styleable name="GifView">  
+        <attr name="gif" format="reference" />  
+        <attr name="Widget_GifView" format="reference" /> 
+        <attr name="paused" format="boolean" />  
+    </declare-styleable>  
+    <declare-styleable name="CustomTheme">  
+        <attr name="gifViewStyle" format="reference" />  
+    </declare-styleable>  
+    
+</resources>
